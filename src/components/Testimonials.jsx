@@ -8,7 +8,7 @@ import rightArrow from "../assets/icon/Arrow Right.svg";
 
 function Testimonials() {
   return (
-    <section className="testimonialSection bg-[#f9fafb] py-[80px]">
+    <section className="testimonialSection bg-[#f9fafb] py-[80px] overflow-x-hidden ">
       <motion.div
         initial={{ y: 20, opacity: 0 }}
         whileInView={{ y: 0, opacity: 1 }}

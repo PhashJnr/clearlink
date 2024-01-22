@@ -8,7 +8,7 @@ import handdrawnarrow from "../assets/icon/Hand-drawn arrow.svg";
 
 function Advantage() {
   return (
-    <section className="advantageSection flex items-center justify-center my-[60px]">
+    <section className="advantageSection flex items-center justify-center my-[60px] overflow-x-hidden ">
       <div className="max-w-[1400px] px-[50px] relative">
         <motion.div
           initial={{ y: 20, opacity: 0 }}

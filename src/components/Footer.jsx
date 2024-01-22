@@ -12,7 +12,7 @@ import gitHub from "../assets/icon/Github.svg";
 function Footer() {
   return (
     <>
-      <footer className="footer px-[30px] ">
+      <footer className="footer px-[30px] overflow-x-hidden ">
         <div className="footerContainer py-[40px]  mx-auto flex flex-col lg:flex-row justify-between max-w-[1400px] ">
           <div className="footerLogo max-w-[400px] ">
             <motion.img

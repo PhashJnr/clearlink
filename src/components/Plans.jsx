@@ -5,7 +5,7 @@ import blueCheckMark from "../assets/icon/Check icon.svg";
 
 function Plans() {
   return (
-    <section className="plansSection my-[40px] flex justify-end pl-[50px]  ">
+    <section className="plansSection my-[40px] flex justify-end pl-[50px] overflow-x-hidden  ">
       <div className="w-[1400px]  ">
         <div className="flex flex-col lg:flex-row justify-between  ">
           <div className="max-w-[520px] sm:mb-7 pr-[20px] ">

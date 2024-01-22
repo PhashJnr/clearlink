@@ -10,7 +10,7 @@ function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className="navBar max-w-[1372px] mx-auto mt-[25px] fixed z-10 lg:absolute left-0 right-0 px-4 ">
+    <nav className="navBar max-w-[1372px] px-3  mx-auto mt-[25px] fixed z-10 lg:absolute left-0 right-0 ">
       <motion.div
         initial={{ y: -20, opacity: 0 }}
         whileInView={{ y: 0, opacity: 1 }}
@@ -22,7 +22,7 @@ function Navbar() {
           type: "spring",
           damping: 10,
         }}
-        className="flex justify-between items-center rounded-[100px] lg:pr-7 px-[16px] py-[10px] border border-[#d0d5dd] bg-[#f2f4f7]"
+        className="flex justify-between items-center rounded-[100px]  lg:pr-7 px-[16px] py-[10px] border border-[#d0d5dd] bg-[#f2f4f7]"
       >
         <div className="navBarLogo">
           <img src={Logo} alt="Logo" />
@@ -49,12 +49,8 @@ function Navbar() {
             text="Talk to sales"
           />
           <Button
-            customClass="bg-[#175CD3] py-[8px] sm:hidden lg:visible text-[#fff] rounded-[100px]"
+            customClass="bg-[#175CD3] py-[8px] text-[#fff] rounded-[100px]"
             text="Sign up for free"
-          />
-          <Button
-            customClass="bg-[#175CD3] lg:hidden sm:visible py-[8px] text-[#fff] rounded-[100px]"
-            text="Sign up"
           />
         </div>
 
@@ -72,7 +68,7 @@ function Navbar() {
       </motion.div>
 
       {/* Hamburger Menu */}
-      <motion.div
+      {/* <motion.div
         initial={{ y: -20, opacity: 0 }}
         whileInView={{ y: 0, opacity: 1 }}
         transition={{
@@ -85,7 +81,7 @@ function Navbar() {
         }}
         className={`${
           isOpen ? "visible" : "hidden"
-        } navBarLinks lg:hidden font-InterSemiBold absolute z-10 left-0 right-0 mt-2 rounded-[16px] h-[100dvh] bg-[#f2f4f7] px-[16px] py-[10px] border border-[#d0d5dd]`}
+        } navBarLinks lg:hidden font-InterSemiBold absolute overflow-x-hidden z-10 left-0 right-0 mt-2 rounded-[16px] h-[100dvh] bg-[#f2f4f7] py-[10px] border border-[#d0d5dd]`}
       >
         <ul className="flex flex-col items-center gap-[40px] mt-[30px] text-[18px] text-[#667085]">
           <motion.li
@@ -175,7 +171,7 @@ function Navbar() {
             text="Sign up for free"
           />
         </motion.div>
-      </motion.div>
+      </motion.div> */}
     </nav>
   );
 }

@@ -16,7 +16,7 @@ function FAQs() {
           type: "spring",
           damping: 30,
         }}
-        className="flex flex-col lg:flex-row px-6 justify-around grow-0
+        className="flex flex-col lg:flex-row px-6 justify-around grow-0 overflow-x-hidden
        mx-auto max-w-[1400px] "
       >
         <div className="faqText max-w-[470px] pr-[30px] mb-6 sm:mb-0 sm:mx-auto lg:mx-0 ">
@@ -131,7 +131,7 @@ function FAQs() {
                 className="py-7 border-b border-[#eaecf0] "
               >
                 <div className="flex justify-between  px-6">
-                  <p className="font-InterSemiBold pr-3 text-[#101828] pr-3 ">
+                  <p className="font-InterSemiBold pr-3 text-[#101828] ">
                     How does ClearLink ensure the security of my video
                     conferences?
                   </p>

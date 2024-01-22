@@ -13,6 +13,7 @@
 body {
   font-family: "Inter-Regular", sans-serif;
   overflow-x: hidden;
+  position: relative;
 }
 
 @font-face {

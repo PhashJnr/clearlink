@@ -28,7 +28,7 @@ function Partnerships() {
           </p>
         </div>
 
-        <div className="partnershipSectionLogos flex flex-col sm:grid sm:grid-cols-3 sm:px-[40px] sm:mt-5 items-center lg:flex-row gap-[30px]  ">
+        <div className="partnershipSectionLogos flex flex-col lg:flex lg:flex-row sm:grid sm:grid-cols-3 sm:px-[40px] sm:mt-5 items-center  gap-[30px]  ">
           <img src={Shopify} alt="Shopify" />
           <img src={coinbase} alt="coinbase" />
           <img src={dropbox} alt="dropbox" />
