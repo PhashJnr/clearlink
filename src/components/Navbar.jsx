@@ -68,7 +68,7 @@ function Navbar() {
       </motion.div>
 
       {/* Hamburger Menu */}
-      {/* <motion.div
+      <motion.div
         initial={{ y: -20, opacity: 0 }}
         whileInView={{ y: 0, opacity: 1 }}
         transition={{
@@ -171,7 +171,7 @@ function Navbar() {
             text="Sign up for free"
           />
         </motion.div>
-      </motion.div> */}
+      </motion.div>
     </nav>
   );
 }
