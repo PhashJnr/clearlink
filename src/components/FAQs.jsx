@@ -16,10 +16,10 @@ function FAQs() {
           type: "spring",
           damping: 30,
         }}
-        className="flex justify-around grow-0
+        className="flex flex-col lg:flex-row px-6 justify-around grow-0
        mx-auto max-w-[1400px] "
       >
-        <div className="faqText max-w-[470px] pr-[30px] ">
+        <div className="faqText max-w-[470px] pr-[30px] mb-6 sm:mb-0 sm:mx-auto lg:mx-0 ">
           <p className="text-[#175cd3] font-InterSemiBold ">Support</p>
           <h3 className="font-InterSemiBold text-[#1d2939] text-[48px] ">
             FAQs
@@ -32,7 +32,7 @@ function FAQs() {
         </div>
 
         <div className="faqAccordion  ">
-          <div className="max-w-[630px]">
+          <div className="max-w-[630px] sm:mx-auto sm:mt-9 ">
             <div className="">
               <motion.div
                 initial={{ y: 20, opacity: 0 }}
@@ -80,10 +80,14 @@ function FAQs() {
                 className="py-7 border-b border-[#eaecf0] "
               >
                 <div className="flex justify-between px-6">
-                  <p className="font-InterSemiBold text-[#101828]  ">
+                  <p className="font-InterSemiBold text-[#101828] pr-3 ">
                     Can I use ClearLink on multiple devices?
                   </p>
-                  <img src={plusIcon} alt="accordion open icon" />
+                  <img
+                    className="self-start"
+                    src={plusIcon}
+                    alt="accordion open icon"
+                  />
                 </div>
               </motion.div>
 
@@ -100,12 +104,16 @@ function FAQs() {
                 }}
                 className="py-7 border-b border-[#eaecf0] "
               >
-                <div className="flex justify-between px-6">
-                  <p className="font-InterSemiBold text-[#101828]  ">
+                <div className="flex justify-between  px-6">
+                  <p className="font-InterSemiBold text-[#101828] pr-3  ">
                     Is ClearLink compatible with other video conferencing
                     platforms?
                   </p>
-                  <img src={plusIcon} alt="accordion open icon" />
+                  <img
+                    className="self-start"
+                    src={plusIcon}
+                    alt="accordion open icon"
+                  />
                 </div>
               </motion.div>
 
@@ -122,12 +130,16 @@ function FAQs() {
                 }}
                 className="py-7 border-b border-[#eaecf0] "
               >
-                <div className="flex justify-between px-6">
-                  <p className="font-InterSemiBold text-[#101828]  ">
+                <div className="flex justify-between  px-6">
+                  <p className="font-InterSemiBold pr-3 text-[#101828] pr-3 ">
                     How does ClearLink ensure the security of my video
                     conferences?
                   </p>
-                  <img src={plusIcon} alt="accordion open icon" />
+                  <img
+                    className="self-start"
+                    src={plusIcon}
+                    alt="accordion open icon"
+                  />
                 </div>
               </motion.div>
 
@@ -145,10 +157,14 @@ function FAQs() {
                 className="py-7 border-b border-[#eaecf0] "
               >
                 <div className="flex justify-between px-6">
-                  <p className="font-InterSemiBold text-[#101828]  ">
+                  <p className="font-InterSemiBold text-[#101828] pr-3  ">
                     Do I need to download any software to use ClearLink?
                   </p>
-                  <img src={plusIcon} alt="accordion open icon" />
+                  <img
+                    className="self-start "
+                    src={plusIcon}
+                    alt="accordion open icon"
+                  />
                 </div>
               </motion.div>
 
@@ -169,7 +185,11 @@ function FAQs() {
                   <p className="font-InterSemiBold text-[#101828]  ">
                     What kind of customer support does ClearLink provide?
                   </p>
-                  <img src={plusIcon} alt="accordion open icon" />
+                  <img
+                    className="self-start"
+                    src={plusIcon}
+                    alt="accordion open icon"
+                  />
                 </div>
               </motion.div>
             </div>

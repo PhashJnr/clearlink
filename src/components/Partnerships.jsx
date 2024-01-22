@@ -8,13 +8,13 @@ import automattic from "../assets/logo/Automattic svg.svg";
 
 function Partnerships() {
   return (
-    <section className="partnershipSection my-[90px] flex justify-center ">
+    <section className="partnershipSection my-[90px]  flex justify-center ">
       <motion.div
         initial={{ y: 20, opacity: 0 }}
         whileInView={{ y: 0, opacity: 1 }}
         transition={{
-          duration: 0.3,
-          delay: 0.3,
+          duration: 0.2,
+          delay: 0.2,
           staggerChildren: 0.2,
           ease: "easeIn",
           type: "spring",
@@ -28,7 +28,7 @@ function Partnerships() {
           </p>
         </div>
 
-        <div className="partnershipSectionLogos flex gap-[30px]  ">
+        <div className="partnershipSectionLogos flex flex-col sm:grid sm:grid-cols-3 sm:px-[40px] sm:mt-5 items-center lg:flex-row gap-[30px]  ">
           <img src={Shopify} alt="Shopify" />
           <img src={coinbase} alt="coinbase" />
           <img src={dropbox} alt="dropbox" />

@@ -8,8 +8,8 @@ import Stars from "../assets/icon/Stars.svg";
 function Hero() {
   return (
     <section className="heroSection bg-heroBg flex justify-center items-center mx-auto max-w-[1300px]">
-      <div className="mt-[90px] heroSectionContainer">
-        <div className="flex ring-[#fff] ">
+      <div className="mt-[120px] heroSectionContainer ">
+        <div className="flex flex-col lg:flex-row lg:justify-between sm:items-center px-6 sm:px-0 ">
           <motion.div
             initial={{ x: -20, opacity: 0 }}
             whileInView={{ x: 0, opacity: 1 }}
@@ -21,19 +21,18 @@ function Hero() {
               type: "spring",
               damping: 10,
             }}
-            className="heroTxt max-w-[680px]"
+            className="heroTxt sm:max-w-[600px] lg:max-w-[630px]"
           >
-            <h1 className="font-InterSemiBold text-[54px]  mb-[20px] text-[#1D2939] leading-[1.2] ">
+            <h1 className="font-InterSemiBold text-[54px]  mb-[20px] text-[#1D2939] leading-none sm:leading-[1.2] ">
               Uniting the world,<br></br> one video call at a time
             </h1>
 
-            <p className="text-[#667085] font-InterRegular text-[20px] leading-[1.1] ">
-              Experience the future of communication with ClearLink – <br></br>{" "}
-              where crystal-clear video conferencing meets <br></br>{" "}
-              unparalleled simplicity.
+            <p className="text-[#667085] font-InterRegular text-[20px] leading-[1.1] pr-9 ">
+              Experience the future of communication with ClearLink – where
+              crystal-clear video conferencing meets unparalleled simplicity.
             </p>
 
-            <div className="flex my-[45px] gap-[10px]">
+            <div className="flex flex-col items-center sm:flex-row my-[45px] gap-[10px]">
               <Button
                 customClass="bg-[#175cd3] rounded-[100px] text-[#fff]"
                 text="Start your free trial"
@@ -64,7 +63,7 @@ function Hero() {
             </div>
           </motion.div>
 
-          <div className="heroImg">
+          <div className="heroImg mt-[38px] sm:mt-0 ">
             <motion.img
               initial={{ x: 20, opacity: 0 }}
               whileInView={{ x: 0, opacity: 1 }}
@@ -76,7 +75,7 @@ function Hero() {
                 type: "spring",
                 damping: 10,
               }}
-              className="max-w-[584px]"
+              className=""
               src={HeroImg}
               alt="hero img"
             />

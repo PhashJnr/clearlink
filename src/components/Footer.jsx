@@ -13,7 +13,7 @@ function Footer() {
   return (
     <>
       <footer className="footer px-[30px] ">
-        <div className="footerContainer py-[40px]  mx-auto flex justify-between max-w-[1400px] ">
+        <div className="footerContainer py-[40px]  mx-auto flex flex-col lg:flex-row justify-between max-w-[1400px] ">
           <div className="footerLogo max-w-[400px] ">
             <motion.img
               initial={{ y: 20, opacity: 0 }}
@@ -46,7 +46,8 @@ function Footer() {
               conferencing. Join us in shaping the future of communication!
             </motion.p>
           </div>
-          <div className="footerLink flex gap-[100px] ">
+
+          <div className="footerLink grid grid-cols-2 sm:grid-cols-4  gap-[70px]  mt-7 lg:mt-0 lg:flex lg:gap-[100px] ">
             <motion.div
               initial={{ y: 20, opacity: 0 }}
               whileInView={{ y: 0, opacity: 1 }}
@@ -159,10 +160,10 @@ function Footer() {
               type: "spring",
               damping: 10,
             }}
-            className="footerMobileStoreLink"
+            className="footerMobileStoreLink mt-7 sm:mt-5 lg:mt-0 "
           >
             <p className="font-InterSemiBold text-[#004eeb] ">Get the app</p>
-            <div className="flex mt-[20px] flex-col gap-[10px]">
+            <div className="flex mt-[20px]  lg:flex-col gap-[10px]">
               <img src={appleStore} alt="Apple Store" />
               <img src={googlePlay} alt="Google Play" />
             </div>
@@ -180,9 +181,9 @@ function Footer() {
           type: "spring",
           damping: 10,
         }}
-        className="footerSocial px-[40px]  bg-[#f9fafb] py-[20px]"
+        className="footerSocial px-[40px]  bg-[#f9fafb] py-[30px]"
       >
-        <div className="flex justify-between items-center max-w-[1400px] mx-auto ">
+        <div className="flex flex-col sm:flex-row gap-4 sm:gap-0 justify-between items-center max-w-[1400px] mx-auto ">
           <p className="font-InterRegular text-[#667085] text-[14px]">
             © 2023 ClearLink. All rights reserved.
           </p>

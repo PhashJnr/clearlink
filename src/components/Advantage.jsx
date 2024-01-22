@@ -34,7 +34,7 @@ function Advantage() {
           </p>
         </motion.div>
         <img
-          className="absolute z-[10] h-[150px] right-[250px] top-[55px]  "
+          className="absolute hidden sm:visible z-[10] h-[150px] right-[250px] top-[55px]  "
           src={handdrawnarrow}
           alt="hand drawn arrow"
         />
@@ -50,9 +50,9 @@ function Advantage() {
             type: "spring",
             damping: 10,
           }}
-          className="flex mt-[55px] "
+          className="flex flex-col-reverse lg:flex-row mt-[55px] "
         >
-          <div className="grid grid-cols-2 gap-5 max-w-[800px] pr-[50px]">
+          <div className="grid grid-cols-1 mt-[50px] sm:mt-0 sm:grid-cols-2 gap-5 max-w-[800px] pr-[50px]">
             <motion.div
               initial={{ y: 20, opacity: 0 }}
               whileInView={{ y: 0, opacity: 1 }}
@@ -188,7 +188,7 @@ function Advantage() {
                 type: "spring",
                 damping: 10,
               }}
-              className=""
+              className=" sm:mx-auto sm:mb-6 "
               src={Advantageimg}
               alt="Advantage Img"
             />

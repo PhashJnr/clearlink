@@ -7,8 +7,8 @@ function Plans() {
   return (
     <section className="plansSection my-[40px] flex justify-end pl-[50px]  ">
       <div className="w-[1400px]  ">
-        <div className="flex  justify-between  ">
-          <div className="max-w-[520px] pr-[20px] ">
+        <div className="flex flex-col lg:flex-row justify-between  ">
+          <div className="max-w-[520px] sm:mb-7 pr-[20px] ">
             <motion.h2
               initial={{ y: 20, opacity: 0 }}
               whileInView={{ y: 0, opacity: 1 }}
@@ -102,7 +102,7 @@ function Plans() {
                 type: "spring",
                 damping: 10,
               }}
-              className="planBtn mt-[25px] flex gap-[10px]"
+              className="planBtn mt-[25px] mb-8 sm:mb-0 flex gap-[10px]"
             >
               <Button
                 customClass="bg-[#fff]  shrink-0 border border-[#98a2b3] rounded-[100px]"
@@ -129,7 +129,7 @@ function Plans() {
               }}
               src={planImg}
               alt="plans"
-              className="max-w-[704px]"
+              className="sm:max-w-[704px]"
             />
           </div>
         </div>

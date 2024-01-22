@@ -22,7 +22,7 @@ function Testimonials() {
         }}
         className="testimonialContainer max-w-[1400px] mx-auto "
       >
-        <div className="flex justify-between px-[20px] ">
+        <div className="flex lg:flex-row flex-col-reverse gap-y-[50px] justify-between px-[20px] ">
           <div className="testimonialText max-w-[660px]">
             <img className="mb-[15px]" src={Shopifylogo} alt="shopify logo" />
             <img src={ratingsStar} alt="ratings star" />
@@ -33,7 +33,7 @@ function Testimonials() {
               team.
             </h3>
 
-            <div className="flex justify-between">
+            <div className="flex flex-col sm:flex-row justify-between">
               <div className="testimonialAvatar flex">
                 <img src={testimonialAvatar} alt="testimonial avatar" />
                 <div className="flex flex-col ml-[15px] justify-between">
@@ -45,7 +45,8 @@ function Testimonials() {
                   </p>
                 </div>
               </div>
-              <div className="arrows flex gap-[25px]">
+
+              <div className="arrows self-center  mt-[20px] sm:mt-0 flex gap-[25px]">
                 <img src={leftArrow} alt="arrow left" />
                 <img src={rightArrow} alt="arrow right" />
               </div>
