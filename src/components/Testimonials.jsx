@@ -8,7 +8,7 @@ import rightArrow from "../assets/icon/Arrow Right.svg";
 
 function Testimonials() {
   return (
-    <section className="testimonialSection bg-[#f9fafb] py-[80px] overflow-x-hidden ">
+    <section className="testimonialSection bg-[#f9fafb] py-[80px] px-3 overflow-x-hidden ">
       <motion.div
         initial={{ y: 20, opacity: 0 }}
         whileInView={{ y: 0, opacity: 1 }}
@@ -27,7 +27,7 @@ function Testimonials() {
             <img className="mb-[15px]" src={Shopifylogo} alt="shopify logo" />
             <img src={ratingsStar} alt="ratings star" />
 
-            <h3 className="text-[#101828] my-[30px] pr-[20px] text-[44px] leading-[50px] font-InterMedium">
+            <h3 className="text-[#101828] my-[30px] sm:pr-[20px] text-[44px] leading-[50px] font-InterMedium">
               ClearLink has upgraded our remote meetings. High-quality video,
               screen sharing, and top-notch security make it essential for our
               team.

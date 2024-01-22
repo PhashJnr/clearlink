@@ -7,7 +7,7 @@ import Stars from "../assets/icon/Stars.svg";
 
 function Hero() {
   return (
-    <section className="heroSection bg-heroBg flex justify-center items-center mx-auto max-w-[1300px] overflow-x-hidden ">
+    <section className="heroSection bg-heroBg flex justify-center items-center mx-auto px-2 max-w-[1300px] overflow-x-hidden ">
       <div className="mt-[120px] heroSectionContainer ">
         <div className="flex flex-col lg:flex-row lg:justify-between sm:items-center px-6 sm:px-0 ">
           <motion.div

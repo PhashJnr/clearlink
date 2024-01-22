@@ -16,7 +16,7 @@ function FAQs() {
           type: "spring",
           damping: 30,
         }}
-        className="flex flex-col lg:flex-row px-6 justify-around grow-0 overflow-x-hidden
+        className="flex flex-col lg:flex-row px-6 justify-around grow-0
        mx-auto max-w-[1400px] "
       >
         <div className="faqText max-w-[470px] pr-[30px] mb-6 sm:mb-0 sm:mx-auto lg:mx-0 ">
