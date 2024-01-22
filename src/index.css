@@ -1,0 +1,65 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: "Inter-Regular", sans-serif;
+}
+
+@font-face {
+  font-family: "Inter-Regular";
+  src: url("../public/fonts/Inter-Regular.ttf");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Inter-Medium";
+  src: url("../public/fonts/Inter-Medium.ttf");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Inter-SemiBold";
+  src: url("../public/fonts/Inter-SemiBold.ttf");
+  font-weight: 600;
+  font-style: normal;
+}
+
+.heroSection {
+  background-image: url("../src/assets/img/heroBg.svg");
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  max-width: fit-content;
+  background-size: cover;
+  background-position: center;
+  /* position: relative; */
+  overflow: hidden;
+}
+
+/* .heroSectionContainer::before,
+.heroSectionContainer::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  width: 50%;
+  height: 100%;
+  backdrop-filter: blur(10px);
+}
+
+.heroSectionContainer::before {
+  left: 0;
+}
+
+.heroSectionContainer::after {
+  right: 0;
+} */
